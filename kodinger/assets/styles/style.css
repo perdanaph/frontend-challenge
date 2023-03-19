@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+}
+
+.left-content {
+  padding: 40px 0px 80px 80px;
+  width: 35%;
+}
+
+.left-content .brand img{
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+.left-content .title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.left-content .title-bold {
+  font-weight: 600;
+}
+
+.left-content .text-content {
+  width: 75%;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.left-content .option {
+  display:flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 15px
+}
+
+.left-content .option a {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  color: rgba(0, 0, 0, 0.79);
+}
+
+.left-content .option a:after {
+  content: "";
+  position: absolute;
+  background-color: #228FA6;
+  height: 3px;
+  width: 0%;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+.left-content .option a:hover::after {
+  width: 100%;
+}
+
+
+.left-content .option a:hover {
+  font-weight: 600;
+  color: black;
+}
+
+.left-content .option {
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.form .email {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form .email label {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 5px;
+}
+
+.form .email input {
+  width: 319px;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  background-color: #F2F2F2;
+}
+
+.form .form-password {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form .form-password a {
+  color: #228FA6;
+  font-size: 14px;
+}
+
+.form .password label {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 5px;
+}
+
+.form .password input {
+  width: 319px;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  background-color: #F2F2F2;
+}
+
+.form .button-signin {
+  margin-top: 30px;
+  width: 319px;
+  padding: 15px;
+  background-color: #228FA6;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
+  box-shadow: 0px 15px 30px rgba(34, 143, 166, 0.5);
+  font-size: 16px;
+}
+
+.left-content footer p {
+  width: 319px;
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.right-content {
+  width: 65%;
+  background-image: url(/assets/images/ilustration.png);
+  background-size: cover;
+}
